@@ -1,0 +1,47 @@
+**1:**
+mkdir unix_tests
+
+**2:**
+touch trybe.txt
+
+**3:**
+cp trybe.txt trybe_backup.txt
+
+**4:**
+mv trybe.txt trybe2.txt
+
+**5:**
+mkdir backup
+
+**6:**
+mv trybe_backup.txt ./backup
+
+**7:**
+mkdir backup2
+
+**8:**
+cd backup | mv trybe_backup.txt /home/usuario/unix_tests/backup2
+
+**9:**
+cd .. | rm -rf backup
+
+**10:**
+mv backup2 backup
+
+**11:**
+ls -a
+
+**12:**
+cd .. | rm -rf backup
+
+**13:**
+crtl + l ou clear
+
+**14:**
+head -5 skills.txt
+
+**15:**
+tail -4 skills.txt
+
+**16:**
+rm -rf *.txt
