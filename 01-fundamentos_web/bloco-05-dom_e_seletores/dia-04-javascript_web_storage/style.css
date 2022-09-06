@@ -1,0 +1,42 @@
+* {
+  margin:0; 
+  padding:0;
+}
+
+body {
+  background-color: #202124;
+}
+
+header {
+  border: 2px solid grey;
+  background-color: black;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  text-align: center;
+  margin-bottom: 2%;
+  color: azure;
+}
+
+p {
+  display: inline-block;
+  width: 30%;
+  margin-left: 1%;
+  text-align: justify;
+  border: 2px solid grey;
+  padding: 0.75%;
+  color: azure;
+  background-color: white;
+}
+
+h4 {
+  margin-left: 10%;
+  margin-top: 6%;
+  padding-top: 1%;
+  color: azure;
+  display: inline-block;
+  text-align: center;
+}
+
+#inputColor {
+  display: inline-block;
+}
