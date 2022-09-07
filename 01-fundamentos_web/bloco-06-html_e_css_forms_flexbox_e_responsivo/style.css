@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    text-align: center;
+}
+
+#email {
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+}
+
+#senha {
+    margin-top: 0.5%;
+}
