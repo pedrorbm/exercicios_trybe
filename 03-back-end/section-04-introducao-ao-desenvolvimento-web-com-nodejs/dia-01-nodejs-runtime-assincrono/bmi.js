@@ -1,8 +1,13 @@
 const readline = require('readline-sync');
 
-const weight = readline.question("What’s your weight? ")
-const height = readline.question("What’s your height? ")
+const bmi = (weight, height) => {
+  const heightResult = height / 100;
+  const bmi = weight / (heightResult ** 2);
+  return bmi;
+};
 
-const imc = weight / (height ** 2);
+const weightUser = readline.questionInt("What’s your weight? (kg) ")
+const heightUser = readline.questionInt("What’s your height? (cm) ")
 
-console.log(`Seu IMC é: ${imc}`);
+
+console.log(`Your BMI is: ${bmi(weightUser, heightUser)}`);
