@@ -2,8 +2,9 @@
   "name": "my-scripts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bmi.js",
   "scripts": {
+    "bmi": "node bmi.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
