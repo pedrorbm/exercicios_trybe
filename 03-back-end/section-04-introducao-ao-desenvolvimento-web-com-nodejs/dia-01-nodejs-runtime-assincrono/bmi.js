@@ -38,7 +38,6 @@ const result = (bmi) => {
     const {min, max} = BMI_MAX_AND_MIN[level];
     const bmiMin = min ? bmi > min : false;
     const bmiMax = max ? bmi < max : false;
-    console.log(bmiMax)
 
     return bmiMin && bmiMax; 
   })
