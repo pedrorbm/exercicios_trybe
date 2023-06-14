@@ -1,4 +1,5 @@
 const express = require('express');
+const fs = require('fs').promises;
 const lecture = require('./lecture');
 
 const app = express();
@@ -16,6 +17,13 @@ app.get('/movies/:id', async (req, res) => {
   const movies = await lecture();
   const search = movies.find(({ id }) => id === Number(req.params.id));
   res.status(200).json(search);
+});
+
+app.post('/movies', async (req, res) => {
+  const movies = await lecture();
+  movies.push({ ...req.body });
+  fs.writeFile('./src/movies.json', JSON.stringify(movies));
+  res.status(201).json(movies);
 });
 
 module.exports = app;
