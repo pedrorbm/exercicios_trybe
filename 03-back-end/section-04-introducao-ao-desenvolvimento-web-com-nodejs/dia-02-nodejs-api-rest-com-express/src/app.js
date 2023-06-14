@@ -26,4 +26,15 @@ app.post('/movies', async (req, res) => {
   res.status(201).json(movies);
 });
 
+app.put('/movies/:id', async (req, res) => {
+  const movies = await lecture();
+  const search = movies.find(({ movie }) => movie === req.params.id);
+
+  const { movie, price } = req.body;
+  search.movie = movie;
+  search.price = price;
+  fs.writeFile('./src/movies.json', JSON.stringify(movies));
+  res.status(200).json(movies);
+});
+
 module.exports = app;
