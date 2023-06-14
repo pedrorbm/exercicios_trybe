@@ -37,4 +37,12 @@ app.put('/movies/:id', async (req, res) => {
   res.status(200).json(movies);
 });
 
+app.delete('/movies/:id', async (req, res) => {
+  const movies = await lecture();
+  const search = movies.filter(({ id }) => id !== Number(req.params.id));
+  console.log(search);
+  fs.writeFile('./src/movies.json', JSON.stringify(search));
+  res.status(200).json(search);
+});
+
 module.exports = app;
