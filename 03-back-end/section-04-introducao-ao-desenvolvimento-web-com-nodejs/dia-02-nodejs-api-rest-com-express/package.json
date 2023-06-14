@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node main",
     "dev": "nodemon main",
+    "lecture": "node ./src/lecture.js",
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json ."
   },
   "keywords": [],
